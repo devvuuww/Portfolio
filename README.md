@@ -2,8 +2,6 @@
 This is a responsive personal portfolio website built using HTML, CSS, and JavaScript.  
 It showcases my projects, achievements, education background, skills, and my contact.
 
-## Features 
-
 ## Features
 
 - Interactive navbar with scroll tracking
