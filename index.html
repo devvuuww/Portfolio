@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Devanio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <div id="loader" aria-label="Loading screen">
+    <div class="loader-box">
+      <div class="loader-bar"></div>
+      <div class="loader-text">
+        <div class="loader-title">Loading…</div>
+        <div class="loader-sub">Welcome!</div>
+      </div>
+    </div>
+  </div>
+
+ 
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <div class="scroll-progress"></div>
+
+ 
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">Portfolio 😎</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+          <li class="nav-item ms-lg-3">
+            <button id="themeToggle" class="btn btn-sm btn-theme" type="button" aria-label="Toggle theme">
+              <span id="themeIcon" aria-hidden="true">🌙</span>
+              <span class="ms-1" id="themeLabel">Dark</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-7 text-center text-lg-start">
+            <div class="pill mb-3">🤩 ようこそ 🤩</div>
+            <h1 class="hero-title">Hi! I'm <span class="accent">Teuku Ahmad Devanio</span></h1>
+            <p class="hero-sub">
+              Student of Universitas Pelita Harapan 2025
+            </p>
+
+            <div class="d-flex gap-2 justify-content-center justify-content-lg-start mt-3">
+              <a class="btn btn-accent btn-lg" href="#achievements">Achievements</a>
+              <a class="btn btn-ghost btn-lg" href="#contact">Contact Me</a>
+            </div>
+
+            <div class="stats mt-4">
+              <div class="stat">
+                <div class="stat-num">Student</div>
+                <div class="stat-label">Athlete</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">Information Systems</div>
+                <div class="stat-label">Student</div>
+              </div>
+              <div class="stat">
+                <div class="stat-num">Chill</div>
+                <div class="stat-label">Personality</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 text-center">
+            <div class="profile-wrap">
+              <img src="assets/img/profile.jpg" alt="Foto Profil" class="profile-img">
+              <div class="profile-shadow" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-hint">Scroll ↓</div>
+    </section>
+    <section id="about" class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7">
+            <div class="card-glass p-4 h-100">
+              <h3 class="mb-2">A bit of Myself..</h3>
+              <p class="text-muted mb-3">
+                Call me Deva, I like the world of Technology, Sports and a bit of Music. A Fun Fact about me is that I’m always curious about how things work behind the scenes.
+              </p>
+
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="mini">
+                    <div class="mini-title">Skills</div>
+                    <div class="mini-text">FrontEnd Designer • Athletic • Music </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="mini">
+                    <div class="mini-title">Interest</div>
+                    <div class="mini-text">UI/UX • Sports • Anime • Music</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="note">
+                    Web Portfolio Project DTW 2025
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div class="card-glass p-4 h-100">
+              <h3 class="mb-3">Tools</h3>
+              <div class="chips">
+                <span class="chip">VS Code</span>
+                <span class="chip">Git</span>
+                <span class="chip">Figma</span>
+                <span class="chip">Bootstrap</span>
+                <span class="chip">MySQL</span>
+              </div>
+
+              <hr class="sep">
+
+              <div class="d-flex gap-2">
+                <a class="btn btn-ghost w-100" href="#education">Education</a>
+                <a class="btn btn-accent w-100" href="#contact">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="education" class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Education</h2>
+          <p class="section-desc">The Diagram of my Journey from Elementary School until Now</p>
+        </div>
+
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-card card-glass">
+              <div class="t-top">
+                <span class="t-level">SD</span>
+                <span class="t-year">2013 – 2019</span>
+              </div>
+              <h5 class="mb-1"> SD Bhakti YKKP & SD Yasporbi 1</h5>
+              <p class="text-muted mb-0">Pancoran , Jakarta Selatan</p>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-card card-glass">
+              <div class="t-top">
+                <span class="t-level">SMP</span>
+                <span class="t-year">2019 – 2022</span>
+              </div>
+              <h5 class="mb-1">SMP Yasporbi 1</h5>
+              <p class="text-muted mb-0">Pancoran, Jakarta Selatan</p>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-card card-glass">
+              <div class="t-top">
+                <span class="t-level">SMA</span>
+                <span class="t-year">2022 – 2025</span>
+              </div>
+              <h5 class="mb-1">SMAN 3 JAKARTA & SMA Jubilee Jakarta</h5>
+              <p class="text-muted mb-0">Setiabudi, Jakarta Selatan & Sunter, Jakarta Utara</p>
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-dot" aria-hidden="true"></div>
+            <div class="t-card card-glass">
+              <div class="t-top">
+                <span class="t-level">University</span>
+                <span class="t-year">2025 – Now</span>
+              </div>
+              <h5 class="mb-1">Universitas Pelita Harapan</h5>
+              <p class="text-muted mb-0">Faculty of Information Technology • Tangerang, Banten</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section id="achievements" class="section reveal">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Skills and Achievements</h2>
+          <p class="section-desc"></p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4">
+          <div class="card-glass ach-card ach-item video-card">
+            <img class="ach-img thumbnail" src="assets/img/uiux.png" alt="Competition">
+            <video class="ach-img preview-video" muted loop playsinline>
+              <source src="assets/vid/UIUX-project.mp4" type="video/mp4">
+            </video>
+            <div class="p-4">
+              <h5 class="mb-1">UI/UX Project</h5>
+              <p class="text-muted mb-3">Collab making Jastip Apps</p>
+              <button class="btn btn-sm btn-accent-outline btn-preview"
+                data-video="assets/vid/UIUX-project.mp4"
+                data-title="UI/UX Project"
+                data-desc="Collab making Jastip Apps">
+                Preview
+              </button>
+            </div>
+          </div>
+        </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-glass ach-card ach-item">
+              <img class="ach-img" src="assets/img/lima.jpeg" alt="Achievement 2">
+              <div class="p-4">
+                <h5 class="mb-1">LIMA Champions 2025</h5>
+                <p class="text-muted mb-3">Basketball Achievement in UPH</p>
+                <button class="btn btn-sm btn-accent-outline btn-preview"
+                        data-img="https://ligamahasiswa.com/storage/galleries/gallery_1767853489.jpeg"
+                        data-title="LIMA Champions 2025"
+                        data-desc="Basketball Achievement in UPH">Preview</button>
+              </div>
+            </div>
+          </div>
+           <div class="col-md-6 col-lg-4">
+            <div class="card-glass ach-card ach-item video-card">
+              <img class="ach-img thumbnail" src="assets/img/piano.png" alt="Competition">
+              <video class="ach-img preview-video" muted loop playsinline>
+                <source src="assets/vid/piano-vid.mp4" type="video/mp4">
+              </video>
+            <div class="p-4">
+              <h5 class="mb-1">A bit of Music</h5>
+              <p class="text-muted mb-3">Piano • "Romantic Flight"</p>
+              <button class="btn btn-sm btn-accent-outline btn-preview"
+                data-video="assets/vid/piano-vid.mp4"
+                data-title="A bit of Music"
+                data-desc="Piano • Romantic Flight">
+                Preview
+              </button>
+            </div>
+          </div>
+        </div>
+            <div class="col-md-6 col-lg-4">
+            <div class="card-glass ach-card ach-item">
+              <img class="ach-img" src="assets/img/nbarising.jpg" alt="Achievement 3">
+              <div class="p-4">
+                <h5 class="mb-1">NBA Rising Stars Invitational</h5>
+                <p class="text-muted mb-3">The Last Dance as A Highchooler</p>
+                <button class="btn btn-sm btn-accent-outline btn-preview"
+                        data-img="assets/img/nbarising.jpg"
+                        data-title="NBA Rising Stars Invitational"
+                        data-desc="Membuat fitur interaktif menggunakan JavaScript murni.">Preview</button>
+                </div>
+              </div>
+            </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card-glass ach-card ach-item">
+              <img class="ach-img" src="assets/img/cproject.png" alt="Achievement 3">
+              <div class="p-4">
+                <h5 class="mb-1">HTML, JS, C#</h5>
+                <p class="text-muted mb-3">Projects that I've made</p>
+                <button class="btn btn-sm btn-accent-outline btn-preview"
+                        data-img="assets/img/cproject.png"
+                        data-title="HTML, JS, C#"
+                        data-desc="Projects that i've made">Preview</button>
+                </div>
+              </div>
+            </div>
+    <section id="contact" class="section reveal">
+      <div class="container">
+        <div class="section-head text-center">
+          <h2 class="section-title">Contact Me</h2>
+          <p class="section-desc">Here are my Social Medias</p>
+        </div>
+        <div class="card-glass p-4 contact-card">
+          <div class="contact-center">
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <img class="social-icon" id="igBtn"
+                   src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+                   alt="Instagram" data-url="https://www.instagram.com/devanio0/" data-copy="@devanio0">
+              <img class="social-icon" id="ttBtn"
+                   src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png"
+                   alt="TikTok" data-url="https://www.tiktok.com/@tuuku_?_r=1&_t=ZS-94SG7DdVqZp" data-copy="@username">
+              <img class="social-icon" id="mailBtn"
+                   src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+                   alt="Email" data-email="teukuahmaddeva@gmail.com">
+            </div>
+
+            <div class="mt-3 text-muted small">
+              Follow me on <b>Instagram</b> , <b>TikTok</b>, or send me an <b>Email</b> 😁
+            </div>
+
+            <div class="mt-4">
+              <div class="pill">© <span id="year"></span> Teuku Ahmad Devanio</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="previewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content modal-glass">
+        <div class="modal-body p-0" id="modalMediaContainer">
+        <img src="" alt="preview" id="modalImg" class="img-fluid w-100">
+          </div>
+        <div class="modal-footer">
+          <div class="me-auto text-start">
+            <h5 id="modalTitle" class="mb-0"></h5>
+            <small id="modalDesc" class="text-muted"></small>
+          </div>
+          <button type="button" class="btn btn-ghost" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
